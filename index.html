@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  
+
+    <title>WatchScape</title>
+  </head>
+  <body>
+    <!--==============header/navigation bar=====================-->
+    <header>
+      <div class="brand">
+        <img
+          src="png-transparent-wrist-watch__1_-removebg-preview.png"
+        />
+      </div>
+      <div id="navbars" class="container">
+        <nav class="navbar">
+          <div>
+            <ul class="navlinks">
+              <li><a href="#navbars">Home</a></li>
+              <li><a href="#all-products">All Products</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li class="cartimage">
+                <a href="#"
+                  ><img
+                    src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-royal-brites-poster-foam-board-photo-paper-royal-lace-19.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="header-content">
+        <div class="header-info">
+          <h3>10+ years in business and still going!</h3>
+          <p>
+            Buy luxury watches from our physical stores in Paris and Monoco or
+            online
+          </p>
+        </div>
+        <div class="header-img">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5c98539c29f2cc374150a758/d6c00421-9aba-4beb-bb87-b24fafcebef1/diy+watch+club+-+watchmaking+with+video.jpg"
+            alt="rolex"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- ============Category section============-->
+    <section class="container" id="categories">
+      <div id="all-products" class="category"><a href="index2.html">
+        <img src="Screenshot_2024-08-15_at_00.12.06-removebg-preview.png" alt="Rolex picture" title="click for more info"/></a>
+        <div class="category-content"></div>
+        <h4>ROLEX</h4>
+        
+        <button type="button" class="buyButton" data-message-id="message-rolex">Buy</button>
+        <div id="message-rolex" class="out-of-stock-message">Out of Stock at the moment</div>
+      </div>
+      </div>
+      <div class="category"><a href="index3.html">
+        <img src="Screenshot_2024-08-15_at_00.15.17-removebg-preview.png" alt="Cartier picture" title="click for more info"/></a>
+        <div class="category-content"></div>
+        <h4>CARTIER</h4>
+        <button type="button" class="buyButton" data-message-id="message-cartier">Buy</button>
+        <div id="message-cartier" class="out-of-stock-message">Out of Stock at the moment</div>
+</div>
+</div>
+      </div>
+      <div class="category"><a href="index4.html">
+        <img src="Screenshot_2024-08-15_at_00.15.32-removebg-preview.png" alt="AP picture" title="click for more info"/></a>
+        <div class="category-content"></div>
+        <h4>AUDEMARS PIGUET</h4>
+        <button type="button" class="buyButton" data-message-id="message-audemars">Buy</button>
+        <div id="message-audemars" class="out-of-stock-message">Out of Stock at the moment</div>
+      </div>
+</div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content container">
+      <div class="col">
+        
+      </div>
+        
+        <div class="col">
+          <h3>Get in touch</h3>
+          <ul>
+            <li>sherlock@gmail.com</li>
+            <li>221B Baker Street</li>
+            <li>+37037372456</li>
+          </ul>
+        </div>
+      
+    </div>
+      </footer>
+
+      <div class="copyright container"><p>© 2024 WatchScape and related entities, All rights reserved</p></div>
+    
+    <script>
+      document.querySelectorAll('.buyButton').forEach(button => {
+        button.onclick = function() {
+          const messageId = this.getAttribute('data-message-id');
+          const message = document.getElementById(messageId);
+          message.style.display = 'block';
+        };
+      });
+    </script>
+  </body>
+</html>

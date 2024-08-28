@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+*
+ { 
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+  --heading : #625834;
+  --text : #30362f;
+ --theme : #fffbdb;
+ --bg : #9cafb7;
+ --footerbg : #95948b;
+}
+
+body {
+  background-color: var(--bg);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5 {
+  color: var(--heading);
+}
+
+p {
+  color: var(--text);
+
+}
+
+a {
+  text-decoration: none;
+
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  
+}
+
+/* =====Header======*/
+
+Header {
+  background-color: var(--bg);
+width: 100vw;
+height: 90vh;
+}
+
+
+
+.navbar {
+  display: flex;
+ justify-content: center;
+}
+
+.navlinks {
+  display: flex;
+ 
+  align-items: center;
+
+}
+.navlinks li {
+  margin: 0 50px;
+}
+.navlinks img {
+  width: 50px;
+}
+
+.navlinks a {
+  color: var(--heading);
+}
+
+ .brand img {
+  width: 80px;  
+
+ }
+ .brand {
+  display: flex;
+  justify-content: center;
+ }
+
+ .header-content {
+  
+  display: flex;
+  align-items: center;
+ }
+
+ .header-content img {
+  animation: fadeIn 5s;
+  max-width: 90%;
+height: 80vh;
+  padding-top: 100px;
+ }
+
+ 
+ .header-info {
+  font-size: xx-large;
+  flex: 60%;
+  margin-top: -150px;
+  margin-left: 150px;
+ }
+
+ .header-info h3 {
+  margin: 20px 0;
+ }
+
+ #categories {
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-between;
+  
+ }
+
+ footer {
+  background-color: var(--footerbg);
+padding: 8px 0;
+ }
+
+ .footer-content {
+  font-style: italic;
+  display: flex;
+  margin: auto;
+  align-items: left;
+ }
+
+ .footer-content .col {
+flex: 1;
+ }
+#comp {
+margin-bottom: 18px;
+}
+
+ .copyright {
+  padding: 10px 0;
+  text-align: center;
+ }
+ .category {
+  
+  text-align: center;
+  padding-bottom: 200px;
+ }
+
+ button {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #fafafa;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #FAFAFA;
+  background: #1f4267;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 35px 0;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+/* rolex page*/
+.rolex-page-imgs {
+  width: 1400px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 10px;
+ margin-right: auto;
+}
+.wrapper.two {
+  background-color: #2c0101;
+  font-size: 6rem;
+  font-family: "Play", sans-serif;
+}
+ .html2-text {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px  ;
+  width: 1000px;
+animation: fadeIn 5s;
+  text-align: center;
+  font-size: 70px;
+  color: black;
+ }
+ @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+/*button function*/
+.out-of-stock-message {
+  display: none; /* Hide the message by default */
+  margin-top: 10px;
+  color: red;
+  font-size: 1.2em;
+}
